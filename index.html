@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elif Yiğit | Portföy</title>
+    <style>
+        /* --- Temel Tasarım Ayarları (CSS) --- */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #18bc9c;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* --- Menü (Header) --- */
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* --- Kahraman Alanı (Hero Section) --- */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: linear-gradient(135deg, #f9f9f9 0%, #e0e0e0 100%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #555;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #128f76;
+            transform: translateY(-3px);
+        }
+
+        /* --- Ortak Bölüm Ayarları --- */
+        section {
+            padding: 100px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+        }
+
+        /* --- Projeler/Deneyim Kartları --- */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* --- İletişim ve Footer --- */
+        .contact-content {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .linkedin-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #0077b5;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menü -->
+    <header>
+        <nav>
+            <a href="#anasayfa">Anasayfa</a>
+            <a href="#hakkimda">Hakkımda</a>
+            <a href="#projeler">Projeler</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+    </header>
+
+    <!-- Giriş Bölümü -->
+    <section id="anasayfa" class="hero">
+        <h1>Merhaba, Ben Elif Yiğit</h1>
+        <p>Yenilikçi çözümler üreten ve sürekli öğrenmeyi hedefleyen bir profesyonelim. Çalışmalarıma ve projelerime hoş geldiniz.</p>
+        <a href="#projeler" class="btn">Projelerimi İncele</a>
+    </section>
+
+    <!-- Hakkımda Bölümü -->
+    <section id="hakkimda">
+        <h2 class="section-title">Hakkımda</h2>
+        <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+            Buraya eğitim geçmişinden, uzmanlık alanlarından ve hedeflerinden bahseden kısa bir paragraf ekleyebilirsin. Yetkinliklerini ve seni motive eden şeyleri ön plana çıkarmak profilini güçlendirecektir.
+        </p>
+    </section>
+
+    <!-- Projeler/Deneyim Bölümü -->
+    <section id="projeler">
+        <h2 class="section-title">Neler Yapıyorum?</h2>
+        <div class="projects-grid">
+            <div class="card">
+                <h3>Proje / Deneyim 1</h3>
+                <p>Buraya katıldığın bir projeyi, üstlendiğin bir görevi veya aldığın önemli bir eğitimi yazabilirsin. Kısaca sonuçlarından ve kullandığın yöntemlerden bahset.</p>
+            </div>
+            <div class="card">
+                <h3>Proje / Deneyim 2</h3>
+                <p>Bu alana staj deneyimini, takım çalışmalarını veya üniversitede geliştirdiğin öne çıkan bir ödev/araştırma konusunu ekleyebilirsin.</p>
+            </div>
+            <div class="card">
+                <h3>Proje / Deneyim 3</h3>
+                <p>Sertifika programları, gönüllü çalışmalar veya kişisel gelişim için yaptığın spesifik bir çalışmayı burada detaylandırabilirsin.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="iletisim">
+        <h2 class="section-title">İletişim</h2>
+        <div class="contact-content">
+            <p>Benimle projeler, iş fırsatları veya fikir alışverişi için LinkedIn üzerinden bağlantı kurabilirsiniz.</p>
+            <a href="https://www.linkedin.com/in/elif-yi%C4%9Fit/" target="_blank" class="linkedin-link">
+                🔗 LinkedIn Profilim: Elif Yiğit
+            </a>
+        </div>
+    </section>
+
+    <!-- Alt Bilgi -->
+    <footer>
+        <p>&copy; 2026 Elif Yiğit. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
